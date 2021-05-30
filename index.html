@@ -16,6 +16,7 @@
 <meta property="og:description" content="corner的学习记录">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Corner">
+<meta property="article:tag" content="C,C++,数据结构,算法,计算机组成原理,单片机">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Corner随笔" type="application/atom+xml">
@@ -80,7 +81,7 @@
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
-			<div class="post-count" style='font-size:14px'>总字数:3.4k字</div>
+			<div class="post-count" style='font-size:14px'>总字数:3.6k字</div>
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -158,6 +159,93 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-yilia主题配置进阶版" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/30/yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E8%BF%9B%E9%98%B6%E7%89%88/">yilia主题配置进阶版</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/30/yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E8%BF%9B%E9%98%B6%E7%89%88/" class="archive-article-date">
+  	<time datetime="2021-05-30T14:36:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-30</time>
+</a>
+        
+        <div align="center" class="post-count">
+          字数：177字 | 预计阅读时长：1分钟
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-怎么置顶文章"><a href="#1-怎么置顶文章" class="headerlink" title="1 怎么置顶文章"></a>1 怎么置顶文章</h3><ul>
+<li>安装<a target="_blank" rel="noopener" href="https://github.com/netcan/hexo-generator-index-pin-top">插件</a><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm uninstall hexo-generator-index --save</span><br><span class="line">cnpm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure></li>
+<li>配置置顶标准<br>打开*/themes/yilia/layout/post.ejs*，直接在最前面插入下述代码。<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (page.top) &#123; %&gt;</span><br><span class="line">  &lt;i class=<span class="attr">&quot;fa fa-thumb-tack&quot;</span>&gt;&lt;/i&gt;</span><br><span class="line">  &lt;font color=7D26CD&gt;置顶&lt;/font&gt;</span><br><span class="line">  &lt;span class=<span class="attr">&quot;post-meta-divider&quot;</span>&gt;|&lt;/span&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></li>
+<li>配置文章<br>在需要置顶的文章的Front-matter中加上top选项即可，top后面的数字越大，优先级越高<br><img src="/2021/05/30/yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E8%BF%9B%E9%98%B6%E7%89%88/%E6%B5%8B%E8%AF%95%E7%BD%AE%E9%A1%B6.png" alt="测试置顶"></li>
+<li>优先级配置<br>修改根目录配置文件/_config.yml，top值-1表示根据top值倒序（正序设置1即可），同样date也是根据创建日期倒叙。<br><img src="/2021/05/30/yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E8%BF%9B%E9%98%B6%E7%89%88/%E7%BD%AE%E9%A1%B6%E4%BC%98%E5%85%88%E7%BA%A7%E9%85%8D%E7%BD%AE.png" alt="优先级配置"></li>
+<li>效果<br><img src="/2021/05/30/yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E8%BF%9B%E9%98%B6%E7%89%88/%E7%BD%AE%E9%A1%B6%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="效果"></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/30/yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E8%BF%9B%E9%98%B6%E7%89%88/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-域名解析以及怎么给hexo绑定域名" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -319,7 +407,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/30/yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/">yilia主题配置</a>
+      <a class="article-title" href="/2021/05/30/yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/">yilia主题配置(基础版)</a>
     </h1>
   
 
@@ -726,6 +814,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">hexo踩坑记录</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
