@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://corner88.cf/2021/05/30/hexo%E4%BA%8C%E7%BA%A7%E5%86%85%E5%AE%B9%E5%A4%B4%E5%83%8F%E4%B8%A2%E5%A4%B1/</loc>
-    
-    <lastmod>2021-05-31</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://corner88.cf/2021/06/01/sitemap%E6%96%B9%E5%BC%8F%E6%8F%90%E4%BA%A4%E7%BD%91%E9%A1%B5/</loc>
     
     <lastmod>2021-05-31</lastmod>
@@ -24,6 +17,13 @@
   
   <url>
     <loc>http://corner88.cf/2021/06/01/%E7%99%BE%E5%BA%A6%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81%E6%96%B9%E5%BC%8F%E6%8F%90%E4%BA%A4%E7%BD%91%E9%A1%B5/</loc>
+    
+    <lastmod>2021-05-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://corner88.cf/2021/05/30/hexo%E4%BA%8C%E7%BA%A7%E5%86%85%E5%AE%B9%E5%A4%B4%E5%83%8F%E4%B8%A2%E5%A4%B1/</loc>
     
     <lastmod>2021-05-31</lastmod>
     
@@ -95,20 +95,6 @@
 
   
   <url>
-    <loc>http://corner88.cf/tags/hexo/</loc>
-    <lastmod>2021-05-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://corner88.cf/tags/hexo%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2021-05-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://corner88.cf/tags/git/</loc>
     <lastmod>2021-05-31</lastmod>
     <changefreq>daily</changefreq>
@@ -116,7 +102,21 @@
   </url>
   
   <url>
+    <loc>http://corner88.cf/tags/hexo/</loc>
+    <lastmod>2021-05-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://corner88.cf/tags/%E4%B8%BB%E9%A2%98/</loc>
+    <lastmod>2021-05-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://corner88.cf/tags/hexo%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2021-05-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
