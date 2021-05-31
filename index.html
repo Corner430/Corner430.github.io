@@ -160,6 +160,114 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-文章加密" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/31/%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/">文章加密</a>
+    </h1>
+  
+
+        <!--显示阅读次数-->
+        
+        <!--显示阅读次数完毕-->
+        
+        <a href="/2021/05/31/%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/" class="archive-article-date">
+  	<time datetime="2021-05-31T15:49:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-31</time>
+</a>
+        
+        <div align="center" class="post-count">
+          字数：219字 | 预计阅读时长：1分钟
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>安装<a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-blog-encrypt">hexo-blog-encrypt</a>插件。<br><code>cnpm install hexo-blog-encrypt --save</code></li>
+<li>配置文件<br>打开根目录下的_config.yml文件，在末尾加上下述字段。<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文章加密</span></span><br><span class="line"><span class="attr">encrypt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">abstract:</span> <span class="string">这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你非常好奇，请与我联系。</span></span><br><span class="line">  <span class="attr">message:</span> <span class="string">输入密码，查看文章。</span></span><br></pre></td></tr></table></figure></li>
+<li>文章Front-Matter配置<br>在想加密的文章头部添加password、abstract、message<blockquote>
+<p>password: 访问文章的的密码<br>abstract: 博客摘要<br>message: 密码框上的信息</p>
+</blockquote>
+</li>
+<li>测试文章<br><img src="/2021/05/31/%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0.png" alt="测试文章"></li>
+<li>效果<br><img src="/2021/05/31/%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/%E6%95%88%E6%9E%9C%E5%9B%BE1.png" alt="效果1"><br>点开后。<br><img src="/2021/05/31/%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/%E6%95%88%E6%9E%9C%E5%9B%BE2.png" alt="效果2"><blockquote>
+<p>需要时加上password，提示语message，abstract摘要，后两者不能设置为空！</p>
+</blockquote>
+</li>
+<li>进阶一下<br>需要额外隐藏一下<strong>浏览数、评论、作者信息等</strong>，在任何需要加密的地方（例如comment.ejs）加上一句。<br><code>&lt;% if (post.encrypt == true) &#123; %&gt;style=&quot;display:none&quot; &lt;% &#125; %&gt;</code></li>
+</ul>
+
+      
+      
+      
+      
+<!-- 增加版权声明 -->
+
+
+
+  <div class="declare" hidden="hidden"></div>
+
+
+<!-- 增加版权声明结束 -->
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">主题</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/31/%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hexo博客添加宠物" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -278,7 +386,7 @@
 </a>
         
         <div align="center" class="post-count">
-          字数：1.8k字 | 预计阅读时长：9分钟
+          字数：1.6k字 | 预计阅读时长：8分钟
         </div>
       </header>
     
