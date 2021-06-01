@@ -19,7 +19,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://corner88.cf/2021/06/01/%E9%93%BE%E6%8E%A5%E6%8F%90%E4%BA%A4%E5%88%B0%E7%99%BE%E5%BA%A6/%E5%87%86%E5%85%A5%E5%AF%86%E9%92%A5%E8%8E%B7%E5%8F%96.png">
 <meta property="article:published_time" content="2021-06-01T00:31:42.000Z">
-<meta property="article:modified_time" content="2021-06-01T01:21:31.438Z">
+<meta property="article:modified_time" content="2021-06-01T04:32:45.862Z">
 <meta property="article:author" content="Corner">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="链接提交">
@@ -77,11 +77,14 @@ var _hmt = _hmt || [];
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
+			
+			<!--音乐播放插件-->
 			<div class='music163playe'>
 				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=52 
 					src="//music.163.com/outchain/player?type=2&id=492003698&auto=1&height=32">
 				</iframe>
 			</div>
+
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -220,7 +223,7 @@ var _hmt = _hmt || [];
 <p>记得检查根目录_config.yml文件中url的值，必须包含是百度站长平台注册的域名。</p>
 </blockquote>
 </li>
-<li>配置<br>配置根目录下的_config.yml，加入新的deployer，<strong>这里的”-“,必不可少！ 否则报错。</strong><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span> <span class="comment">## 这是我原来的deployer</span></span><br><span class="line">    <span class="attr">repo:</span></span><br><span class="line">    <span class="attr">branch:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">baidu_url_submitter</span> <span class="comment">## 添加这里内容即可</span></span><br></pre></td></tr></table></figure></li>
+<li>配置<br>配置根目录下的_config.yml，加入新的deployer，<strong>这里的”-“,必不可少！ 否则报错。</strong><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span> <span class="comment">## 这是我原来的deployer</span></span><br><span class="line">      <span class="attr">repo:</span></span><br><span class="line">      <span class="attr">branch:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">baidu_url_submitter</span> <span class="comment">## 添加这里内容即可</span></span><br></pre></td></tr></table></figure></li>
 <li>原理<br>新链接的产生， hexo generate 会产生一个文本文件，里面包含最新的链接<br>新链接的提交， hexo deploy 会从上述文件中读取链接，提交至百度搜索引擎</li>
 </ul>
 <ol start="2">
@@ -576,15 +579,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">自动推送</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">域名解析</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">domain</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">自动推送</a>
               </li>
              
               <li class="article-tag-list-item">
