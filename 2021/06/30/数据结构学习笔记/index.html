@@ -10,15 +10,15 @@
   <link rel="dns-prefetch" href="http://corner88.cf">
   <title>数据结构学习笔记 | Corner学习小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个强大的在线编译器测试代码 123456789101112131415161718192021222324252627282930313233343536373839&#x2F;*设将n(n&gt;1)个整数存放到一维数组R中，设计一个算法，将R中的序列循环左移P(0&lt;P&lt;n)个位置。思想：先将R中前P个元素逆置，再将剩下的元素逆置，最后将R中所有的元素再整体做一次逆置操作即可。*&#x2F;#incl">
+  <meta name="description" content="一个强大的在线编译器测试代码">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构学习笔记">
 <meta property="og:url" content="http://corner88.cf/2021/06/30/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Corner学习小屋">
-<meta property="og:description" content="一个强大的在线编译器测试代码 123456789101112131415161718192021222324252627282930313233343536373839&#x2F;*设将n(n&gt;1)个整数存放到一维数组R中，设计一个算法，将R中的序列循环左移P(0&lt;P&lt;n)个位置。思想：先将R中前P个元素逆置，再将剩下的元素逆置，最后将R中所有的元素再整体做一次逆置操作即可。*&#x2F;#incl">
+<meta property="og:description" content="一个强大的在线编译器测试代码">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-06-30T14:52:25.000Z">
-<meta property="article:modified_time" content="2021-06-30T15:44:27.620Z">
+<meta property="article:modified_time" content="2021-06-30T15:53:21.309Z">
 <meta property="article:author" content="Corner">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="数据结构">
@@ -100,7 +100,7 @@ var _hmt = _hmt || [];
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
-			<div class="post-count" style='font-size:14px'>总字数:15.6k字</div>
+			<div class="post-count" style='font-size:14px'>总字数:15.7k字</div>
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -210,13 +210,13 @@ var _hmt = _hmt || [];
 </a>
         
         <div align="center" class="post-count">
-          字数：719字 | 预计阅读时长：3分钟
+          字数：835字 | 预计阅读时长：3分钟
         </div>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a target="_blank" rel="noopener" href="https://www.onlinegdb.com/online_c++_complier">一个强大的在线编译器</a><br>测试代码</p>
+        <p><a target="_blank" rel="noopener" href="https://www.onlinegdb.com/online_c++_complier">一个强大的在线编译器</a><br>测试代码<span id="more"></span></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*设将n(n&gt;1)个整数存放到一维数组R中，设计一个算法，将R中的序列循环左移P(0&lt;P&lt;n)个位置。</span></span><br><span class="line"><span class="comment">思想：先将R中前P个元素逆置，再将剩下的元素逆置，最后将R中所有的元素再整体做一次逆置操作即可。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 50</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Reverse</span><span class="params">(<span class="keyword">int</span> R[],<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,j;</span><br><span class="line">    <span class="keyword">int</span> temp;</span><br><span class="line">    <span class="keyword">for</span>(i = l,j = r;i &lt; j;i++,j--)&#123;</span><br><span class="line">        temp = R[i];</span><br><span class="line">        R[i] = R[j];</span><br><span class="line">        R[j] = temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">RCR</span><span class="params">(<span class="keyword">int</span> R[],<span class="keyword">int</span> n,<span class="keyword">int</span> p)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(p &lt;= <span class="number">0</span>||p &gt;= n)</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;ERROR&quot;</span>&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">Reverse</span>(R,<span class="number">0</span>,p<span class="number">-1</span>);</span><br><span class="line">        <span class="built_in">Reverse</span>(R,p,n<span class="number">-1</span>);</span><br><span class="line">        <span class="built_in">Reverse</span>(R,<span class="number">0</span>,n<span class="number">-1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> L,i;</span><br><span class="line">    <span class="keyword">int</span> R[N],n;</span><br><span class="line">    cin&gt;&gt;L;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>;i &lt;= n<span class="number">-1</span>;++i)</span><br><span class="line">        cin&gt;&gt;R[i];</span><br><span class="line">    <span class="built_in">RCR</span>(R,n,L);</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>;i &lt;= n<span class="number">-1</span>;++i)</span><br><span class="line">        cout&lt;&lt;R[i]&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="1-绪论"><a href="#1-绪论" class="headerlink" title="1 绪论"></a>1 绪论</h3><h4 id="1-1-考研中的C与C-语言基础"><a href="#1-1-考研中的C与C-语言基础" class="headerlink" title="1.1 考研中的C与C++语言基础"></a>1.1 考研中的C与C++语言基础</h4><ul>
@@ -235,6 +235,9 @@ var _hmt = _hmt || [];
 <li>附加知识<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span></span><br><span class="line">    ...</span><br><span class="line">    ...</span><br><span class="line">&#125;Node;</span><br></pre></td></tr></table></figure>
 可以发现，有一个”node”和”Node”，即结构体定义中的上下两个名称不同。<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">BTNode</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">BTNode</span> *<span class="title">lchild</span>;</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">BTNode</span> *<span class="title">rchild</span>;</span></span><br><span class="line">&#125;BTNode,*btnode;</span><br></pre></td></tr></table></figure>
 可以看到最后又多了个*btnode，其实在定义一个节点指针p的时候，<code>BTNode *p;</code>这种写法是顺理成章的，因为它继承了之前<code>int *a;</code>、<code>char *b;</code>、<code>float *c;</code>和<code>TypeA *d;</code>这些指针定义的一般规律，是我们记忆起来非常方便，不必再加个<code>btnode p;</code>来增加记忆负担。因此考研中不建议使用。</li>
+<li>制作节点<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方法一：</span></span><br><span class="line">BTNode BT;</span><br><span class="line"><span class="comment">//方法二：</span></span><br><span class="line">BTNode *BT;</span><br><span class="line">BT = (BTNode*)<span class="built_in">malloc</span>(<span class="built_in">sideof</span>(BTNode));   <span class="comment">//此句必须掌握</span></span><br></pre></td></tr></table></figure></li>
+<li>动态申请数组空间<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> *p;</span><br><span class="line">p = (<span class="keyword">int</span> *)<span class="built_in">malloc</span>(n * <span class="built_in"><span class="keyword">sizeof</span></span>(<span class="keyword">int</span>));</span><br></pre></td></tr></table></figure>
+这就申请了一个由指针p所指的（p指向数组中第一个元素的地址）、元素为int型的、长度为n的动态数组。取元素的时候和一般的数组（静态数组）一样，如取第二个元素，则可写成p[1]。</li>
 </ul>
 
       
