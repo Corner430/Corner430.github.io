@@ -18,7 +18,7 @@
 <meta property="og:description" content="首先在所在themes&#x2F;_config.yml中找到mathjax，将其属性改为true。之后便可以使用数学公式了。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-07-02T13:20:21.000Z">
-<meta property="article:modified_time" content="2021-07-02T14:00:34.598Z">
+<meta property="article:modified_time" content="2021-07-02T14:26:58.388Z">
 <meta property="article:author" content="Corner">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="markdown">
@@ -99,7 +99,7 @@ var _hmt = _hmt || [];
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
-			<div class="post-count" style='font-size:14px'>总字数:16.8k字</div>
+			<div class="post-count" style='font-size:14px'>总字数:17.2k字</div>
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -205,49 +205,72 @@ var _hmt = _hmt || [];
 </a>
         
         <div align="center" class="post-count">
-          字数：224字 | 预计阅读时长：1分钟
+          字数：614字 | 预计阅读时长：2分钟
         </div>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
         <p>首先在所在themes/_config.yml中找到mathjax，将其属性改为true。之后便可以使用数学公式了。<span id="more"></span></p>
-<h4 id="行内与独行"><a href="#行内与独行" class="headerlink" title="行内与独行"></a>行内与独行</h4><ol>
-<li>行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$</li>
-<li>独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$，如：$$xyz$$</li>
-</ol>
-<hr>
-<h4 id="上标和下标组合"><a href="#上标和下标组合" class="headerlink" title="上标和下标组合"></a>上标和下标组合</h4><ol>
-<li>上标符号，符号：^，如：$x^4$</li>
-<li>下标符号，符号：_，如：$x_1$</li>
-<li>组合符号，符号：{}，如：${x}^{y}_{ij}$</li>
-</ol>
-<hr>
-<h4 id="汉字和字体格式"><a href="#汉字和字体格式" class="headerlink" title="汉字和字体格式"></a>汉字和字体格式</h4><ol>
-<li><p>汉字形式，符号：\mbox{}，如：$V_{\mbox{初始}}$</p>
+<h4 id="行内与独行"><a href="#行内与独行" class="headerlink" title="行内与独行"></a>行内与独行</h4><ul>
+<li>行内公式：将公式插入到本行内，符号：<code>$公式内容$</code>，如：$xyz$</li>
+<li>独行公式：将公式插入到新的一行内，并且居中，符号：<code>$$公式内容$$</code>，如：$$xyz$$</li>
+</ul>
+<h4 id="上标和下标组合"><a href="#上标和下标组合" class="headerlink" title="上标和下标组合"></a>上标和下标组合</h4><ul>
+<li>上标符号，符号：<code>^</code>，如：$x^4$</li>
+<li>下标符号，符号：<code>_</code>，如：$x_1$</li>
+<li>组合符号，符号：<code>&#123;&#125;</code>，如：${x}^{y}_{ij}$</li>
+</ul>
+<h4 id="汉字和字体格式"><a href="#汉字和字体格式" class="headerlink" title="汉字和字体格式"></a>汉字和字体格式</h4><ul>
+<li><p>汉字形式，符号：<code>\mbox&#123;&#125;</code>，如：$V_{\mbox{初始}}$</p>
 </li>
-<li><p>文字加深，\boldsymbol{}，如$\boldsymbol{x}$</p>
+<li><p>文字加深，<code>\boldsymbol&#123;&#125;</code>，如$\boldsymbol{x}$</p>
 </li>
 <li><p>特殊字形，</p>
-<ol>
-<li>符号： \mathcal，如$\mathcal{ABC}$</li>
-<li>符号： \mathbb，如$\mathbb{ABC}$</li>
-<li>符号： \mathscr，如$\mathscr{ABC}$ </li>
-</ol>
+<ul>
+<li>符号： <code>\mathcal</code>，如$\mathcal{ABC}$</li>
+<li>符号： <code>\mathbb</code>，如$\mathbb{ABC}$</li>
+<li>符号： <code>\mathscr</code>，如$\mathscr{ABC}$ </li>
+</ul>
 </li>
-<li><p>字体控制，符号：\displaystyle，如：$\displaystyle \frac{x+y}{y+z}$</p>
+<li><p>字体控制，符号：<code>\displaystyle</code>，如：$\displaystyle \frac{x+y}{y+z}$</p>
 </li>
-<li><p>下划线符号，符号：\underline，如：$\underline{x+y}$</p>
+<li><p>下划线符号，符号：<code>\underline</code>，如：$\underline{x+y}$</p>
 </li>
-<li><p>标签，符号\tag{数字}，如：$$\tag{3}$$</p>
+<li><p>标签，符号：<code>\tag&#123;数字&#125;</code>，如：$$\tag{3}$$</p>
 </li>
-<li><p>自动添加后缀标签，符号:</p>
-<blockquote>
-<p>\begin{align} \end{align}</p>
-</blockquote>
+<li><p>自动添加后缀标签，符号：<code>\begin&#123;align&#125; \end&#123;align&#125;</code><br>如：$$\begin{align} x \end{align}$$</p>
 </li>
-</ol>
-<p>如：$$\begin{align} x \end{align}$$</p>
+<li><p>上大括号，符号：<code>\overbrace&#123;算式&#125;</code>，如：$\overbrace{a+b+c+d}^{2.0}$</p>
+</li>
+<li><p>下大括号，符号：<code>\underbrace&#123;算式&#125;</code>，如：$a+\underbrace{b+c}_{1.0}+d$</p>
+</li>
+<li><p>上位符号，符号：<code>\stacrel&#123;上位符号&#125;&#123;基位符号&#125;</code>，如：$\vec{x}\stackrel{\mathrm{def}}{=}{x_1,\dots,x_n}$</p>
+</li>
+<li><p>上下标位置，符号:<code>\sideset控制四角上下标，\overset与\underset控制上下标居中</code>,如: $\sideset{^a_b}{^c_d}A$,$\overset{100}A$,$\underset{100}A$,$\overset{100}{\underset{200}A}$</p>
+</li>
+<li><p>方程式，符号：<code>\begin&#123;cases&#125; \end&#123;cases&#125;</code>，如：$\begin{cases} a+b=1 \ a-b=0.5 \end{cases}$</p>
+</li>
+</ul>
+<h4 id="占位符"><a href="#占位符" class="headerlink" title="占位符"></a>占位符</h4><ul>
+<li>两个quad空格，符号：<code>\qquad</code>，如：$x \qquad y$</li>
+<li>quad空格，符号：<code>\quad</code>，如：$x \quad y$</li>
+<li>大空格，符号：<code>\</code>，如：$x \ y$</li>
+<li>中空格，符号：<code>\:</code>，如：$x : y$</li>
+<li>小空格，符号：<code>\,</code>，如：$x , y$</li>
+<li>没有空格，符号：``，如：$xy$</li>
+<li>紧贴，符号：<code>\!</code>，如：$x ! y$</li>
+</ul>
+<h4 id="定界符与组合"><a href="#定界符与组合" class="headerlink" title="定界符与组合"></a>定界符与组合</h4><ul>
+<li>括号，符号：<code>（）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)</code>，如：$（）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)$</li>
+<li>中括号，符号：<code>[]</code>，如：$[x+y]$</li>
+<li>大括号，符号：<code>\&#123; \&#125;</code>，如：${x+y}$</li>
+<li>自适应括号，符号：<code>\left \right</code>，如：$\left(x\right)$，$\left(x_{yz}\right)$</li>
+<li>组合公式，符号：<code>&#123;上位公式 \choose 下位公式&#125;</code>，如：${n+1 \choose k}={n \choose k}+{n \choose k-1}$</li>
+<li>组合公式，符号：<code>&#123;上位公式 \atop 下位公式&#125;</code>，如：$\sum_{k_0,k_1,\ldots&gt;0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots$</li>
+<li>多行大括号，符号：<code>\begin&#123;cases&#125;  \end&#123;cases&#125;</code>，如：$$f(x) = \begin{cases} 0&amp; \text{x=0} \ 1&amp; \text{x!=0} \end{cases}$$</li>
+</ul>
+<h4 id="四则运算"><a href="#四则运算" class="headerlink" title="四则运算"></a>四则运算</h4><h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xym4869/p/11282586.html">Markdown数学公式语法</a><br><a target="_blank" rel="noopener" href="https://www.huaweicloud.com/articles/2a62b09a875890613673074063fe9d32.html">Markdown数学公式语法华为云</a></p>
 
       
       
@@ -293,24 +316,7 @@ var _hmt = _hmt || [];
 <!-- 增加版权声明 -->
 
 
-  <div class="declare">
-    <strong>本文作者：</strong>
-    
-      Corner
-    
-    <br>
-    <strong>本文链接：</strong>
-    <a rel="license" href="http://corner88.cf/2021/07/02/%E7%94%A8markdown%E4%B9%A6%E5%86%99%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/">http://corner88.cf/2021/07/02/%E7%94%A8markdown%E4%B9%A6%E5%86%99%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</a>
-    <br>
-    <strong>版权声明：</strong>
-    本作品采用
-    <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
-    进行许可。转载请注明出处！
-    
-      <br>
-      <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
-    
-  </div>
+  <div class="declare" hidden="hidden"></div>
 
 
 <!-- 增加版权声明结束 -->
@@ -459,7 +465,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%8C%E5%86%85%E4%B8%8E%E7%8B%AC%E8%A1%8C"><span class="toc-number">1.</span> <span class="toc-text">行内与独行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8A%E6%A0%87%E5%92%8C%E4%B8%8B%E6%A0%87%E7%BB%84%E5%90%88"><span class="toc-number">2.</span> <span class="toc-text">上标和下标组合</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B1%89%E5%AD%97%E5%92%8C%E5%AD%97%E4%BD%93%E6%A0%BC%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text">汉字和字体格式</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%8C%E5%86%85%E4%B8%8E%E7%8B%AC%E8%A1%8C"><span class="toc-number">1.</span> <span class="toc-text">行内与独行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8A%E6%A0%87%E5%92%8C%E4%B8%8B%E6%A0%87%E7%BB%84%E5%90%88"><span class="toc-number">2.</span> <span class="toc-text">上标和下标组合</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B1%89%E5%AD%97%E5%92%8C%E5%AD%97%E4%BD%93%E6%A0%BC%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text">汉字和字体格式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%A0%E4%BD%8D%E7%AC%A6"><span class="toc-number">4.</span> <span class="toc-text">占位符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E7%95%8C%E7%AC%A6%E4%B8%8E%E7%BB%84%E5%90%88"><span class="toc-number">5.</span> <span class="toc-text">定界符与组合</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97"><span class="toc-number">6.</span> <span class="toc-text">四则运算</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="toc-number">7.</span> <span class="toc-text">参考文章</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -645,15 +651,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">提交网页</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">google收录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
               </li>
              
               <li class="article-tag-list-item">
