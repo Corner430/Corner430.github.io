@@ -10,15 +10,15 @@
   <link rel="dns-prefetch" href="http://corner88.cf">
   <title>用markdown书写数学公式 | Corner学习小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="?\frac{1}{1+\frac{1}{2}}?\(a + b\)$$a + b??\frac{x+y}{2}??\sqrt{2}&lt;\sqrt[3]{3}??\sum_{k&#x3D;1}^{n}\frac{1}{k}?">
+  <meta name="description" content="首先在所在themes&#x2F;_config.yml中找到mathjax，将其属性改为true。之后便可以使用数学公式了。 行内与独行 行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$ 独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$，如：$$xyz$$   上标和下标组合 上标符号，符号：^，如：$x^4$ 下标符号，符号：_，如：$x_1$ 组合符号，符号：{}，如">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用markdown书写数学公式">
 <meta property="og:url" content="http://corner88.cf/2021/07/02/%E7%94%A8markdown%E4%B9%A6%E5%86%99%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Corner学习小屋">
-<meta property="og:description" content="?\frac{1}{1+\frac{1}{2}}?\(a + b\)$$a + b??\frac{x+y}{2}??\sqrt{2}&lt;\sqrt[3]{3}??\sum_{k&#x3D;1}^{n}\frac{1}{k}?">
+<meta property="og:description" content="首先在所在themes&#x2F;_config.yml中找到mathjax，将其属性改为true。之后便可以使用数学公式了。 行内与独行 行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$ 独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$，如：$$xyz$$   上标和下标组合 上标符号，符号：^，如：$x^4$ 下标符号，符号：_，如：$x_1$ 组合符号，符号：{}，如">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-07-02T13:20:21.000Z">
-<meta property="article:modified_time" content="2021-07-02T13:26:04.719Z">
+<meta property="article:modified_time" content="2021-07-02T13:56:54.393Z">
 <meta property="article:author" content="Corner">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="markdown">
@@ -99,7 +99,7 @@ var _hmt = _hmt || [];
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
-			<div class="post-count" style='font-size:14px'>总字数:16.6k字</div>
+			<div class="post-count" style='font-size:14px'>总字数:16.8k字</div>
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -205,13 +205,49 @@ var _hmt = _hmt || [];
 </a>
         
         <div align="center" class="post-count">
-          字数：27字 | 预计阅读时长：1分钟
+          字数：224字 | 预计阅读时长：1分钟
         </div>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>?\frac{1}{1+\frac{1}{2}}?<br>\(a + b\)<br>$$a + b?<br>?\frac{x+y}{2}?<br>?\sqrt{2}&lt;\sqrt[3]{3}?<br>?\sum_{k=1}^{n}\frac{1}{k}?</p>
+        <p>首先在所在themes/_config.yml中找到mathjax，将其属性改为true。之后便可以使用数学公式了。</p>
+<h4 id="行内与独行"><a href="#行内与独行" class="headerlink" title="行内与独行"></a>行内与独行</h4><ol>
+<li>行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$</li>
+<li>独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$，如：$$xyz$$</li>
+</ol>
+<hr>
+<h4 id="上标和下标组合"><a href="#上标和下标组合" class="headerlink" title="上标和下标组合"></a>上标和下标组合</h4><ol>
+<li>上标符号，符号：^，如：$x^4$</li>
+<li>下标符号，符号：_，如：$x_1$</li>
+<li>组合符号，符号：{}，如：${x}^{y}_{ij}$</li>
+</ol>
+<hr>
+<h4 id="汉字和字体格式"><a href="#汉字和字体格式" class="headerlink" title="汉字和字体格式"></a>汉字和字体格式</h4><ol>
+<li><p>汉字形式，符号：\mbox{}，如：$V_{\mbox{初始}}$</p>
+</li>
+<li><p>文字加深，\boldsymbol{}，如$\boldsymbol{x}$</p>
+</li>
+<li><p>特殊字形，</p>
+<ol>
+<li>符号： \mathcal，如$\mathcal{ABC}$</li>
+<li>符号： \mathbb，如$\mathbb{ABC}$</li>
+<li>符号： \mathscr，如$\mathscr{ABC}$ </li>
+</ol>
+</li>
+<li><p>字体控制，符号：\displaystyle，如：$\displaystyle \frac{x+y}{y+z}$</p>
+</li>
+<li><p>下划线符号，符号：\underline，如：$\underline{x+y}$</p>
+</li>
+<li><p>标签，符号\tag{数字}，如：$$\tag{3}$$</p>
+</li>
+<li><p>自动添加后缀标签，符号:</p>
+<blockquote>
+<p>\begin{align} \end{align}</p>
+</blockquote>
+</li>
+</ol>
+<p>如：$$\begin{align} x \end{align}$$</p>
 
       
       
@@ -423,7 +459,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%8C%E5%86%85%E4%B8%8E%E7%8B%AC%E8%A1%8C"><span class="toc-number">1.</span> <span class="toc-text">行内与独行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8A%E6%A0%87%E5%92%8C%E4%B8%8B%E6%A0%87%E7%BB%84%E5%90%88"><span class="toc-number">2.</span> <span class="toc-text">上标和下标组合</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B1%89%E5%AD%97%E5%92%8C%E5%AD%97%E4%BD%93%E6%A0%BC%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text">汉字和字体格式</span></a></li></ol>
                     </div>
                 </span>
             </div>
