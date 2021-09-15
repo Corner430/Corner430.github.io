@@ -389,6 +389,13 @@
   </url>
   
   <url>
+    <loc>http://corner88.cf/tags/yilia/</loc>
+    <lastmod>2021-09-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://corner88.cf/tags/%E6%8F%90%E4%BA%A4%E7%BD%91%E9%A1%B5/</loc>
     <lastmod>2021-09-15</lastmod>
     <changefreq>daily</changefreq>
@@ -397,13 +404,6 @@
   
   <url>
     <loc>http://corner88.cf/tags/google%E6%94%B6%E5%BD%95/</loc>
-    <lastmod>2021-09-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://corner88.cf/tags/yilia/</loc>
     <lastmod>2021-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
