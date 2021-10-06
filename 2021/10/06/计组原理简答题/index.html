@@ -18,7 +18,7 @@
 <meta property="og:description" content="每小题4分，共20分。 2018年简答题 高级语言、汇编语言、机器语言的区别和定义。（参考白书P11-9）  机器语言是一种用二进制代码表示的计算机语言，机器可以直接执行用机器语言编写的程序。 汇编语言是一种用助记符表示的与机器语言一一对应的语言，用汇编语言编写的程序需经过汇编后才能执行。 高级语言是一种接近人类自然语言的与计算机结构无关的语言，用高级语言编写的程序要经过解释或编译才能执行。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-06T13:05:05.000Z">
-<meta property="article:modified_time" content="2021-10-06T15:40:22.092Z">
+<meta property="article:modified_time" content="2021-10-06T16:11:16.836Z">
 <meta property="article:author" content="Corner">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="考研">
@@ -100,7 +100,7 @@ var _hmt = _hmt || [];
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
-			<div class="post-count" style='font-size:14px'>总字数:23.8k字</div>
+			<div class="post-count" style='font-size:14px'>总字数:24.6k字</div>
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -210,7 +210,7 @@ var _hmt = _hmt || [];
 </a>
         
         <div align="center" class="post-count">
-          字数：2.5k字 | 预计阅读时长：8分钟
+          字数：3.3k字 | 预计阅读时长：11分钟
         </div>
       </header>
     
@@ -305,7 +305,43 @@ var _hmt = _hmt || [];
 </ul>
 <hr>
 <h3 id="2002年简答题"><a href="#2002年简答题" class="headerlink" title="2002年简答题"></a>2002年简答题</h3><ul>
-<li>某浮点格式如下：<br>|$E_0$|$E_1$…$E_m$|||||</li>
+<li>某浮点格式如下：<br>|$E_0$|$E_1$…$E_m$|$M_{01}$|$M_{02}$|$M_1$…$M_n$|<br>其中$E_0$为阶符，$E_1$…$E_m$为阶码；$M_{01}$，$M_{02}$为数符，$M_1$…$M_n$为尾数，数以2为底的补码表示；规格化表示。<br>试根据浮点运算结果中$M_{01}$，$M_{02}$，$M_1$这三位的8种不同组合（000-111），说明哪些情况下需要规格化？需进行哪种规格化？</li>
+<li>转子指令在保存返回地址时有哪些方法？这些方法对多重转子及子程序递归是否提供支持？</li>
+<li>试论证在浮点除法运算中，为什么经过“尾数调整”的操作后，其结果就必定是规格化结果？</li>
+<li>将源程序转换为机器可执行的指令序列有哪两种基本方式？分别试怎样做的？</li>
+<li>在硬盘上记录超出一道容量的信息时，是优先于柱面记录、还是优先于盘面记录？为什么？</li>
+</ul>
+<hr>
+<h3 id="2001年简答题"><a href="#2001年简答题" class="headerlink" title="2001年简答题"></a>2001年简答题</h3><ul>
+<li><p>试论述在浮点加减运算的对阶过程中，为什么要使小的队友向大的队友对齐？反过来有何不可？如果让大的阶码减少，则尾数左移将丢失有效高位。</p>
+</li>
+<li><p>写出三种判别溢出的逻辑表达式，注明表达式中参数的含义。</p>
+</li>
+<li><p>动态存储器DRAM为什么要定期刷新？对整个存储说，是同时刷新还是逐片按序刷新？对每块DRAM芯片来说，是逐位刷新还是逐行按序刷新？对每块DRAM芯片来说，是逐位刷新还是逐行刷新？目前最大刷新周期约为多少？</p>
+<ul>
+<li>他是依靠电容上的存储电荷来暂存信息的，电容上的电荷会逐渐泄露。</li>
+<li>同时刷新</li>
+<li>2ms</li>
+</ul>
+</li>
+<li><p>若按指令功能分类，则指令系统可分为哪几类？</p>
+<ul>
+<li>传送指令，储存指令，算术运算指令，逻辑运算指令，IO指令，程序控制类指令，处理机控制类指令。</li>
+</ul>
+</li>
+<li><p>如果系统采用单级中断方式，则一般在中断隐指令中要做哪些操作？而在其后的中断服务中又要先后作哪些操作？</p>
+</li>
+</ul>
+<hr>
+<h3 id="1998年简答题"><a href="#1998年简答题" class="headerlink" title="1998年简答题"></a>1998年简答题</h3><ul>
+<li>简要列举堆栈在计算机中的四种作用。</li>
+<li>在原码两位乘法运算中，为什么部分积与被乘数均应采取三符号位参与运算？</li>
+<li>若某种编码的码距为d，可以检错的位数为a，可以纠错的位数为b，则a,b与d之间有什么样的关系？d = 3的校验码具体的校验能力如何？</li>
+<li>简要叙述一般接口的功能。</li>
+<li>何谓中断升级？中断系统用何种手段，如何实现中断升级？</li>
+<li>一般用哪几项技术指标评价一个存储器性能的好坏？分别是怎么计量的？</li>
+<li>简述发出中断请求的部件将请求信号传送给CPU的几种可行的办法。</li>
+<li>简要归纳 主存/辅存 和 主存/高速缓存 两种层次之间在通路结构、应用目的、系统控制手段和透明性上的不同。</li>
 </ul>
 
       
@@ -527,7 +563,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#2018%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">2018年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2017%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">2017年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2016%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">2016年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2013%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">2013年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2005%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">5.</span> <span class="toc-text">2005年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2004%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">6.</span> <span class="toc-text">2004年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2003%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">7.</span> <span class="toc-text">2003年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2002%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">8.</span> <span class="toc-text">2002年简答题</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#2018%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">2018年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2017%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">2017年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2016%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">2016年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2013%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">2013年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2005%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">5.</span> <span class="toc-text">2005年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2004%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">6.</span> <span class="toc-text">2004年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2003%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">7.</span> <span class="toc-text">2003年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2002%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">8.</span> <span class="toc-text">2002年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2001%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">9.</span> <span class="toc-text">2001年简答题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1998%E5%B9%B4%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">10.</span> <span class="toc-text">1998年简答题</span></a></li></ol>
                     </div>
                 </span>
             </div>
