@@ -96,7 +96,7 @@ var _hmt = _hmt || [];
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
-			<div class="post-count" style='font-size:14px'>总字数:21.3k字</div>
+			<div class="post-count" style='font-size:14px'>总字数:22.1k字</div>
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -195,7 +195,7 @@ var _hmt = _hmt || [];
 </a>
         
         <div align="center" class="post-count">
-          字数：949字 | 预计阅读时长：3分钟
+          字数：981字 | 预计阅读时长：3分钟
         </div>
       </header>
     
@@ -389,6 +389,159 @@ var _hmt = _hmt || [];
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2021/06/01/%E9%87%8D%E8%A6%81%E9%80%9A%E7%9F%A5/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-计组原理简答题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/10/06/%E8%AE%A1%E7%BB%84%E5%8E%9F%E7%90%86%E7%AE%80%E7%AD%94%E9%A2%98/">计组原理简答题</a>
+    </h1>
+  
+
+        <!--显示阅读次数-->
+        
+        <!--显示阅读次数完毕-->
+        
+        <a href="/2021/10/06/%E8%AE%A1%E7%BB%84%E5%8E%9F%E7%90%86%E7%AE%80%E7%AD%94%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2021-10-06T13:05:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-06</time>
+</a>
+        
+        <div align="center" class="post-count">
+          字数：709字 | 预计阅读时长：2分钟
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="2018年简答题"><a href="#2018年简答题" class="headerlink" title="2018年简答题"></a>2018年简答题</h3><ul>
+<li><p>高级语言、汇编语言、机器语言的区别和定义。（参考白书P11-9）</p>
+<ul>
+<li>机器语言是一种用二进制代码表示的计算机语言，机器可以直接执行用机器语言编写的程序。</li>
+<li>汇编语言是一种用助记符表示的与机器语言一一对应的语言，用汇编语言编写的程序需经过汇编后才能执行。</li>
+<li>高级语言是一种接近人类自然语言的与计算机结构无关的语言，用高级语言编写的程序要经过解释或编译才能执行。</li>
+</ul>
+</li>
+<li><p>浮点数尾数规格化的操作流程。（参考课本P66）<br>  尾数加减后有可能不符合规格化的约定，因而需要将尾数移位，使之规格化，并相应的调整阶码。</p>
+<ul>
+<li>如果两同号数相加，尾数有进位到符号位，使|M| ≥ 1，则需将尾数右移一位（且阶码加一）使之规格化，称之为右规。</li>
+<li>如果两异号数相加（或同号数相减），使|M| ＜ 1/2，则需将尾数左移一位（且阶码减一）使之规格化，称为左规。</li>
+<li>（需要注意，如果正尾数的最高有效位不为1，应左移。如果补码表示的负尾数的最高有效位不为0，也应左移。）</li>
+</ul>
+</li>
+<li><p>补码一位乘、海明码 名词解释（参考真题书后方答案）</p>
+<ul>
+<li>补码乘法：操作数与结果均以补码表示，连同符号位一起，按相应算法运算。</li>
+<li>海明校验：实际是一种多重奇偶校验，即将代码按照一定规律组织为若干小组，分组进行奇偶校验。各组的校错信息组成一个指误字，不仅能够检测是否出错，且在只有一位出错的情况下指出哪一位错，从而将该位自动变反纠错。</li>
+</ul>
+</li>
+<li><p>指令和微指令的格式。（参考真题书后方答案＋白书P65-22~24）</p>
+<ul>
+<li>一般而言，一条微指令由<strong>微命令</strong>字段和<strong>微地址</strong>字段两部分组成；而一条指令则由<strong>操作码</strong>字段和<strong>操作数地址码</strong>字段两部分组成。</li>
+<li>微指令地址的形成方式有两种，一种是<strong>计数器</strong>方式，从<strong>uPC</strong>获得下一条微指令的微地址；另一种方式是<strong>断定</strong>方式，从微指令的<strong>下址字段</strong>获得下一条微指令的微地址。</li>
+<li>微指令的格式可以分为<strong>水平</strong>型和<strong>垂直</strong>型两类，前一类的微指令结构较<strong>长</strong>，微程序结构较<strong>短</strong>。</li>
+</ul>
+</li>
+<li><p>三种输入输出的控制方式。（本题参考白书P124-9，I/O与主机交换信息有几种方式，各有何特点？）</p>
+</li>
+</ul>
+
+      
+      
+      
+ 
+    <!- 百度自动推送方式提交 -->
+    
+      <script>
+      (function(){
+          var bp = document.createElement('script');
+          var curProtocol = window.location.protocol.split(':')[0];
+          if (curProtocol === 'https') {
+              bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+          }
+          else {
+              bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+          }
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(bp, s);
+      })();
+      </script>
+    
+    <!- 百度自动推送方式提交结束 -->
+    
+    
+<!-- 增加版权声明 -->
+
+
+  <div class="declare" hidden="hidden"></div>
+
+
+<!-- 增加版权声明结束 -->
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">计组简答</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/10/06/%E8%AE%A1%E7%BB%84%E5%8E%9F%E7%90%86%E7%AE%80%E7%AD%94%E9%A2%98/">展开全文 >></a>
         </p>
       
 
@@ -1260,123 +1413,6 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-英语四级秘宝" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/06/03/%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%BA%A7%E7%A7%98%E5%AE%9D/">英语四级秘宝</a>
-    </h1>
-  
-
-        <!--显示阅读次数-->
-        
-        <!--显示阅读次数完毕-->
-        
-        <a href="/2021/06/03/%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%BA%A7%E7%A7%98%E5%AE%9D/" class="archive-article-date">
-  	<time datetime="2021-06-03T13:36:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-03</time>
-</a>
-        
-        <div align="center" class="post-count">
-          字数：7k字 | 预计阅读时长：32分钟
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>本篇笔记为学习20年刘晓燕老师的四级救命班时所记。</p></blockquote>
-        
-          <a class="article-more-a" href="/2021/06/03/%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%BA%A7%E7%A7%98%E5%AE%9D/#more">more >></a>
-        
-      
-      
-      
- 
-    <!- 百度自动推送方式提交 -->
-    
-      <script>
-      (function(){
-          var bp = document.createElement('script');
-          var curProtocol = window.location.protocol.split(':')[0];
-          if (curProtocol === 'https') {
-              bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-          }
-          else {
-              bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-          }
-          var s = document.getElementsByTagName("script")[0];
-          s.parentNode.insertBefore(bp, s);
-      })();
-      </script>
-    
-    <!- 百度自动推送方式提交结束 -->
-    
-    
-<!-- 增加版权声明 -->
-
-
-  <div class="declare" hidden="hidden"></div>
-
-
-<!-- 增加版权声明结束 -->
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">英语</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/06/03/%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%BA%A7%E7%A7%98%E5%AE%9D/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1526,11 +1562,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">hexo踩坑记录</a>
+                <a href="javascript:void(0)" class="js-tag color3">主题</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">主题</a>
+                <a href="javascript:void(0)" class="js-tag color4">hexo踩坑记录</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1591,6 +1627,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">英语</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">计组简答</a>
               </li>
              
               <li class="article-tag-list-item">

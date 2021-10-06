@@ -1,3 +1,4 @@
+http://corner88.cf/2021/10/06/%E8%AE%A1%E7%BB%84%E5%8E%9F%E7%90%86%E7%AE%80%E7%AD%94%E9%A2%98/
 http://corner88.cf/2021/07/03/%E4%BD%BF%E7%94%A8hexo%E7%94%BB%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE-1/
 http://corner88.cf/2021/07/03/%E4%BD%BF%E7%94%A8markdown%E7%94%BB%E6%B5%81%E7%A8%8B%E5%9B%BE/
 http://corner88.cf/2021/07/03/LG-V50%E6%8A%98%E8%85%BE%E8%AE%B0/
@@ -17,4 +18,3 @@ http://corner88.cf/2021/06/01/%E6%90%AD%E5%BB%BAhugo%E5%8D%9A%E5%AE%A2/
 http://corner88.cf/2021/06/01/%E5%9C%A8vmware-workstation%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E5%AE%89%E8%A3%85ubuntu%E7%B3%BB%E7%BB%9F/
 http://corner88.cf/2021/06/01/%E5%AE%89%E8%A3%85vmware-workstation%E8%99%9A%E6%8B%9F%E6%9C%BA/
 http://corner88.cf/2021/06/01/%E8%87%AA%E5%BB%BAkms%E6%9C%8D%E5%8A%A1%E5%99%A8/
-http://corner88.cf/2021/06/01/kms%E6%BF%80%E6%B4%BBwin10%E5%92%8Coffice/
