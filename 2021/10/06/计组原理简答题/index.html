@@ -18,7 +18,7 @@
 <meta property="og:description" content="每小题4分，共20分。 2018年简答题 高级语言、汇编语言、机器语言的区别和定义。（参考白书P11-9）  机器语言是一种用二进制代码表示的计算机语言，机器可以直接执行用机器语言编写的程序。 汇编语言是一种用助记符表示的与机器语言一一对应的语言，用汇编语言编写的程序需经过汇编后才能执行。 高级语言是一种接近人类自然语言的与计算机结构无关的语言，用高级语言编写的程序要经过解释或编译才能执行。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-06T13:05:05.000Z">
-<meta property="article:modified_time" content="2021-12-16T15:48:16.121Z">
+<meta property="article:modified_time" content="2021-12-16T16:12:37.371Z">
 <meta property="article:author" content="Corner">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="考研">
@@ -100,7 +100,7 @@ var _hmt = _hmt || [];
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
-			<div class="post-count" style='font-size:14px'>总字数:25.5k字</div>
+			<div class="post-count" style='font-size:14px'>总字数:25.7k字</div>
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -210,7 +210,7 @@ var _hmt = _hmt || [];
 </a>
         
         <div align="center" class="post-count">
-          字数：4.1k字 | 预计阅读时长：14分钟
+          字数：4.4k字 | 预计阅读时长：14分钟
         </div>
       </header>
     
@@ -268,7 +268,14 @@ var _hmt = _hmt || [];
 <li>“存储程序” 的概念是指将该指令以代码的形式事先输入计算机的主存储器，然后按其在存储器中的首地址执行程序的第一条指令，以后就按该程序的规定顺序执行其他指令，直至程序执行结束。</li>
 </ul>
 </li>
-<li><p>在计算机系统中，外部设备通过I/O接口与系统总线相连，I/O接口中可以被CPU寻址访问的存储电路称为端口。端口地址和内存地址分配主要有几种方式？请举例说明各自的特点和应用。</p>
+<li><p>在计算机系统中，外部设备通过I/O接口与系统总线相连，I/O接口中可以被CPU寻址访问的存储电路称为端口。端口地址和内存地址分配主要有几种方式？请举例说明各自的特点和应用。（哈工程课本P312和白书P116）</p>
+<ul>
+<li>CPU对外设编址的方式有统一编址法和单独编址法两种。<ul>
+<li>计算机系统将接口中的有关寄存器与主存储器统一编制，像访问主存一样访问接口中的寄存器。统一编制的优点是可利用访存指令进行输入/输出操作，程序设计简单；缺点是外设占用存储器地址空间，影响了存储器的扩展。某些单片机系列采用统一编址方式。</li>
+<li>单独编址法指外设端口寄存器与存储器地址重叠，各自独立编址，需要用专门的I/O指令控制输入/输出操作。单独编址法的优点是存储器地址与I/O地址可以重叠，二者不会产生混淆，存储器扩展也容易；缺点是需要专门的输入/输出指令。目前Intel的处理器均采用单独编址法。</li>
+</ul>
+</li>
+</ul>
 </li>
 <li><p>在微程序控制器设计中，主要有两种形成后继微指令地址的方式，分别是增量方式和断定方式。请简要说明增量方式主要包括哪些？断定方式是如何产生后继地址的？</p>
 </li>
@@ -776,10 +783,6 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">手机</a>
               </li>
              
@@ -793,6 +796,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">洋垃圾</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
