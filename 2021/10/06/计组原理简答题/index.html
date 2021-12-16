@@ -18,7 +18,7 @@
 <meta property="og:description" content="每小题4分，共20分。 2018年简答题 高级语言、汇编语言、机器语言的区别和定义。（参考白书P11-9）  机器语言是一种用二进制代码表示的计算机语言，机器可以直接执行用机器语言编写的程序。 汇编语言是一种用助记符表示的与机器语言一一对应的语言，用汇编语言编写的程序需经过汇编后才能执行。 高级语言是一种接近人类自然语言的与计算机结构无关的语言，用高级语言编写的程序要经过解释或编译才能执行。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-06T13:05:05.000Z">
-<meta property="article:modified_time" content="2021-12-16T16:12:37.371Z">
+<meta property="article:modified_time" content="2021-12-16T16:51:44.876Z">
 <meta property="article:author" content="Corner">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="考研">
@@ -100,7 +100,7 @@ var _hmt = _hmt || [];
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
-			<div class="post-count" style='font-size:14px'>总字数:25.7k字</div>
+			<div class="post-count" style='font-size:14px'>总字数:26.4k字</div>
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -210,7 +210,7 @@ var _hmt = _hmt || [];
 </a>
         
         <div align="center" class="post-count">
-          字数：4.4k字 | 预计阅读时长：14分钟
+          字数：5k字 | 预计阅读时长：17分钟
         </div>
       </header>
     
@@ -277,12 +277,16 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </li>
-<li><p>在微程序控制器设计中，主要有两种形成后继微指令地址的方式，分别是增量方式和断定方式。请简要说明增量方式主要包括哪些？断定方式是如何产生后继地址的？</p>
+<li><p>在微程序控制器设计中，主要有两种形成后继微指令地址的方式，分别是增量方式和断定方式。请简要说明增量方式主要包括哪些？断定方式是如何产生后继地址的？（哈工程课本P152，白书P56）</p>
+<ul>
+<li>增量方式：用微地址计数器来产生下一条微指令的微地址。顺序执行微指令时，后继微指令地址由现行微指令地址加上一个增量来产生。非顺序执行时，用转移微指令实现转移。转移微指令的控制字段分成转移控制字段与转移地址字段两部分。当转移条件满足时，将转移地址字段作为下一个微地址。若转移条件不满足，则直接从微程序计数器中取得下一条微指令的地址。</li>
+<li>断定方式：根据机器状态决定下一条微指令的微地址。后继微指令的微地址包含在当前微指令的代码中。在微指令中给出两部分信息：直接给定的微地址高位部分和形成低位微地址的方法（即断定条件）。所形成的微地址也就由两部分组成：直接给定的高位部分，以及根据断定条件形成的低位部分。</li>
+</ul>
 </li>
-<li><p>试说明Cache-主存地址映像方式主要有几种？目前较为常用的是哪一种，其主存地址如何转换为Cache地址？</p>
-</li>
-<li><p>中断机制是现代计算机系统实现输入/输出操作的一种主流技术，试说明中断全过程分几个阶段，每个阶段的主要任务是什么？向量中断是如何转入中断服务程序的？</p>
-</li>
+</ul>
+<ul>
+<li>试说明Cache-主存地址映像方式主要有几种？目前较为常用的是哪一种，其主存地址如何转换为Cache地址？</li>
+<li>中断机制是现代计算机系统实现输入/输出操作的一种主流技术，试说明中断全过程分几个阶段，每个阶段的主要任务是什么？向量中断是如何转入中断服务程序的？</li>
 </ul>
 <hr>
 <h3 id="2016年简答题"><a href="#2016年简答题" class="headerlink" title="2016年简答题"></a>2016年简答题</h3><ul>
@@ -295,7 +299,21 @@ var _hmt = _hmt || [];
 </li>
 <li><p>在RISC处理器中往往设置大量的片上寄存器，试从指令系统设计的角度分析这样做的原因。</p>
 </li>
-<li><p>请简要说明微指令主要包括哪两部分信息？根据当前微指令如何形成后继微指令地址？</p>
+<li><p>请简要说明微指令主要包括哪两部分信息？根据当前微指令如何形成后继微指令地址？（哈工程课本P152，白书P56，王道P211）</p>
+<ul>
+<li><p>一条微指令通常至少包含两大部分信息：</p>
+<ul>
+<li>操作控制字段，又称微操作码字段，用于产生某一步操作所需的各种操作控制信号。</li>
+<li>顺序控制字段，又称微地址码字段，用于控制产生下一条要执行的微指令地址。</li>
+</ul>
+</li>
+<li><p>在微程序控制器设计中，主要有两种形成后继微指令地址的方式，分别是增量方式和断定方式。</p>
+<ul>
+<li>增量方式：用微地址计数器来产生下一条微指令的微地址。顺序执行微指令时，后继微指令地址由现行微指令地址加上一个增量来产生。非顺序执行时，用转移微指令实现转移。转移微指令的控制字段分成转移控制字段与转移地址字段两部分。当转移条件满足时，将转移地址字段作为下一个微地址。若转移条件不满足，则直接从微程序计数器中取得下一条微指令的地址。</li>
+<li>断定方式：根据机器状态决定下一条微指令的微地址。后继微指令的微地址包含在当前微指令的代码中。在微指令中给出两部分信息：直接给定的微地址高位部分和形成低位微地址的方法（即断定条件）。所形成的微地址也就由两部分组成：直接给定的高位部分，以及根据断定条件形成的低位部分。</li>
+</ul>
+</li>
+</ul>
 </li>
 <li><p>请说明动态随机存取存储器进行刷新操作的原因及主要的刷新方式。</p>
 </li>
@@ -783,6 +801,10 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">手机</a>
               </li>
              
@@ -796,10 +818,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">洋垃圾</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -875,15 +893,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">计组简答</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">通知</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">链接提交</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">计组简答</a>
               </li>
             
             <div class="clearfix"></div>
