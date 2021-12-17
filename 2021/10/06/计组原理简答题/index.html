@@ -18,7 +18,7 @@
 <meta property="og:description" content="每小题4分，共20分。 2018年简答题 高级语言、汇编语言、机器语言的区别和定义。（参考白书P11-9）  机器语言是一种用二进制代码表示的计算机语言，机器可以直接执行用机器语言编写的程序。 汇编语言是一种用助记符表示的与机器语言一一对应的语言，用汇编语言编写的程序需经过汇编后才能执行。 高级语言是一种接近人类自然语言的与计算机结构无关的语言，用高级语言编写的程序要经过解释或编译才能执行。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-06T13:05:05.000Z">
-<meta property="article:modified_time" content="2021-12-16T16:51:44.876Z">
+<meta property="article:modified_time" content="2021-12-17T00:49:40.282Z">
 <meta property="article:author" content="Corner">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="考研">
@@ -100,7 +100,7 @@ var _hmt = _hmt || [];
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
-			<div class="post-count" style='font-size:14px'>总字数:26.4k字</div>
+			<div class="post-count" style='font-size:14px'>总字数:26.8k字</div>
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -210,7 +210,7 @@ var _hmt = _hmt || [];
 </a>
         
         <div align="center" class="post-count">
-          字数：5k字 | 预计阅读时长：17分钟
+          字数：5.4k字 | 预计阅读时长：18分钟
         </div>
       </header>
     
@@ -285,7 +285,13 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 <ul>
-<li>试说明Cache-主存地址映像方式主要有几种？目前较为常用的是哪一种，其主存地址如何转换为Cache地址？</li>
+<li>试说明Cache-主存地址映像方式主要有几种？目前较为常用的是哪一种，其主存地址如何转换为Cache地址？（参考课本P255）<ul>
+<li>Cache-主存地址映像方式主要有直接映像、全相联映像和组相联映像。</li>
+<li>目前组相联映像较为常用。</li>
+<li>Cache和主存均要分组。先将Cache分成若干组，每组若干个数据块，再将主存分组，主存每组包含的数据块数量与Cache划分的组数是一样的。<br>将主存地址码在逻辑上分为三个部分，即“主存组号 + 块内组序号 + 块内字节序号”。每块的Cache大小为$2^i$字节,则取主存地址码的低i位为块内字节序号。Cache被分为了$2^c$组，则再取c位作为块内组序号，剩余的高位作为主存块号。当转换地址时，先找到主存块对应的Cache组，再将主存地址码的组号分别与Cache组内的各块设置的标记字段进行逐一比较，找到相应的块。再将组内块序号映射为组号，和块内字节序号这三部分一起进行拼接，进而得到Cache地址。</li>
+<li>组相联映射实际上是直接映射和和全相联映射的一种折中。将Cache空间分成大小相同的组，主存的一个数据块可以装入一组内的任何一个位置，即组间采取直接映射，而组内采取全相联映射。</li>
+</ul>
+</li>
 <li>中断机制是现代计算机系统实现输入/输出操作的一种主流技术，试说明中断全过程分几个阶段，每个阶段的主要任务是什么？向量中断是如何转入中断服务程序的？</li>
 </ul>
 <hr>
